@@ -34,13 +34,23 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  //first itreat over the  array 
+  find a pair that adds up to the target
+  Check if the sum of the current element and
+   the element from the inner loop equals the target
+   If a pair is found, return true else return false 
 */
-
+//w
 
 
 
 /*
   Add written explanation of your solution here
+  Use the map function to iterate over each element in the array
+  in each itreation we need to get the elemnt and the index and creat a new array with slice 
+  we use find to find in the new array elemnt that the result of elmnet1 and elemnt equal to traget
+  using some so its can go throught the array and that we found at leat one pair and the some equal to target 
+  and return true else false 
 */
 
 // You can run `node index.js` to view these console logs
