@@ -30,6 +30,9 @@ function hasTargetSum(array, target) {
 
 /* 
   Write the Big O time complexity of your function here
+  for the map its o(n)
+  for find its  itearat  throught the array so and try to find elemnts so its (n-1)+(n-2) 
+  and some itearat throught the elements finded so its o(n)
 */
 
 /* 
