@@ -1,5 +1,9 @@
 function hasTargetSum(array, target) {
+
   // Write your algorithm here
+
+
+
 }
 
 /* 
@@ -27,6 +31,7 @@ if (require.main === module) {
 
   console.log("");
 
+  
   console.log("Expecting: false");
   console.log("=>", hasTargetSum([1, 2, 5], 4));
 }
