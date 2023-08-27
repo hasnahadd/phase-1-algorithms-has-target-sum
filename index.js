@@ -1,10 +1,32 @@
+// function hasTargetSum(array, target) {
+//   arrayNew=[];
+// for (let index = 0; index < array.length; index++) {
+//   const element = array[index];
+//   arrayNew.push(element);
+//   for(let j= index+1; j< array.length; j++){
+//     const element1 = array[j];
+//     arrayNew.push(element1);
+// if(element + element1 == target){
+// return true
+
+// }
+//   }
+// }
+//   return false;
+//   return arrayNew;}
 function hasTargetSum(array, target) {
+  return array.map((element, index) => 
+    array.slice(index + 1).find(element1 => element + element1 === target)
+  ).some(foundElement => foundElement !== undefined);
+}
 
   // Write your algorithm here
 
 
 
-}
+
+
+
 
 /* 
   Write the Big O time complexity of your function here
@@ -13,6 +35,9 @@ function hasTargetSum(array, target) {
 /* 
   Add your pseudocode here
 */
+
+
+
 
 /*
   Add written explanation of your solution here
@@ -31,7 +56,7 @@ if (require.main === module) {
 
   console.log("");
 
-  
+
   console.log("Expecting: false");
   console.log("=>", hasTargetSum([1, 2, 5], 4));
 }
